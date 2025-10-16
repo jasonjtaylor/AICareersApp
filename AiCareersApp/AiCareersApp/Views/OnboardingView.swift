@@ -196,7 +196,8 @@ struct AgeModeButton: View {
                     Color.backgroundSecondary
                 }
             }
-
+            .cornerRadius(Layout.cornerRadiusM)
+            .dreamShadow()
         }
     }
 }

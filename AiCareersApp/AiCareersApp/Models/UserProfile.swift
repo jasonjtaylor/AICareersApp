@@ -23,23 +23,23 @@ class UserProfile {
     var isParentMode: Bool
 
     init(displayName: String, ageMode: AgeMode) {
-        id = UUID().uuidString
+        self.id = UUID().uuidString
         self.displayName = displayName
         self.ageMode = ageMode
-        totalXP = 0
-        level = 1
-        streakCount = 0
-        lastActiveAt = Date()
-        badges = []
-        completedCareers = []
-        recommendedCareers = []
-        isParentMode = false
+        self.totalXP = 0
+        self.level = 1
+        self.streakCount = 0
+        self.lastActiveAt = Date()
+        self.badges = []
+        self.completedCareers = []
+        self.recommendedCareers = []
+        self.isParentMode = false
     }
 }
 
 enum AgeMode: String, CaseIterable, Codable {
-    case kid = "Kid" // 8-12
-    case teen = "Teen" // 13-17
+    case kid = "Kid"      // 8–12
+    case teen = "Teen"    // 13–17
     case student = "Student" // 18+
 
     var displayName: String {
@@ -69,10 +69,10 @@ class Progress {
 
     init(careerId: String) {
         self.careerId = careerId
-        completedStepIds = []
-        earnedXP = 0
-        earnedBadges = []
-        lastUpdated = Date()
+        self.completedStepIds = []
+        self.earnedXP = 0
+        self.earnedBadges = []
+        self.lastUpdated = Date()
     }
 }
 
@@ -80,7 +80,7 @@ class Progress {
 class Badge {
     var id: String
     var name: String
-    var details: String       // ✅ renamed
+    var details: String
     var iconName: String
     var isUnlocked: Bool
     var unlockedAt: Date?
@@ -96,5 +96,6 @@ class Badge {
         self.xpReward = xpReward
     }
 }
+
 
 
