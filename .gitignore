@@ -1,0 +1,34 @@
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+
+# CocoaPods (if you ever add it)
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# User-specific
+*.swp
+.DS_Store
+
+# App artifacts
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Firebase/Secrets (IF you ever add them)
+# GoogleService-Info.plist  # (uncomment to exclude)
+# .env
+
