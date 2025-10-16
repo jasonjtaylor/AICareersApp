@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-14
     defaults:
       run:
-        working-directory: YOUR_FOLDER_HERE
+        working-directory: AiCareersApp
 
     steps:
       - uses: actions/checkout@v4
@@ -21,29 +21,15 @@ jobs:
 
       - name: Resolve SwiftPM dependencies
         run: |
-          if ls -1 *.xcworkspace >/dev/null 2>&1; then
-            xcodebuild -resolvePackageDependencies -workspace "$(ls -1 *.xcworkspace | head -n1)"
-          else
-            xcodebuild -resolvePackageDependencies -project "$(ls -1 *.xcodeproj | head -n1)"
-          fi
+          xcodebuild -resolvePackageDependencies -project "$(ls -1 *.xcodeproj | head -n1)"
 
       - name: Build (Debug, iPhone Simulator)
         run: |
-          NAME=$(ls -1 *.xcworkspace *.xcodeproj 2>/dev/null | head -n1 | sed 's/\.\(xcworkspace\|xcodeproj\)$//')
-          if ls -1 *.xcworkspace >/dev/null 2>&1; then
-            xcodebuild \
-              -workspace "$NAME.xcworkspace" \
-              -scheme "$NAME" \
-              -sdk iphonesimulator \
-              -configuration Debug \
-              -destination 'platform=iOS Simulator,name=iPhone 15' \
-              build
-          else
-            xcodebuild \
-              -project "$NAME.xcodeproj" \
-              -scheme "$NAME" \
-              -sdk iphonesimulator \
-              -configuration Debug \
-              -destination 'platform=iOS Simulator,name=iPhone 15' \
-              build
-          fi
+          NAME=$(ls -1 *.xcodeproj | head -n1 | sed 's/\.xcodeproj$//')
+          xcodebuild \
+            -project "$NAME.xcodeproj" \
+            -scheme "$NAME" \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -destination 'platform=iOS Simulator,name=iPhone 15' \
+            build
