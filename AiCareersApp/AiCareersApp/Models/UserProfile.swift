@@ -80,20 +80,20 @@ class Progress {
 class Badge {
     var id: String
     var name: String
-    var description: String
     var iconName: String
     var isUnlocked: Bool
     var unlockedAt: Date?
     var xpReward: Int
+var details: String
 
-    init(id: String, name: String, description: String, iconName: String, xpReward: Int = 0) {
-        self.id = id
-        self.name = name
-        self.description = description
-        self.iconName = iconName
-        isUnlocked = false
-        unlockedAt = nil
-        self.xpReward = xpReward
-    }
+init(id: String, name: String, details: String, iconName: String, xpReward: Int = 0) {
+    self.id = id
+    self.name = name
+    self.details = details
+    self.iconName = iconName
+    isUnlocked = false
+    unlockedAt = nil
+    self.xpReward = xpReward
+}
 }
 

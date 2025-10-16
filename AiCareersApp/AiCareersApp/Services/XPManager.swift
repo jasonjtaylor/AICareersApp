@@ -85,13 +85,14 @@ class XPManager: ObservableObject {
             }
         } else {
             // Create new badge
-            let badge = Badge(
-                id: badgeId,
-                name: getBadgeName(for: badgeId),
-                description: getBadgeDescription(for: badgeId),
-                iconName: getBadgeIcon(for: badgeId),
-                xpReward: getBadgeXPReward(for: badgeId)
-            )
+let badge = Badge(
+    id: badgeId,
+    name: getBadgeName(for: badgeId),
+    details: getBadgeDescription(for: badgeId),      // ✅
+    iconName: getBadgeIcon(for: badgeId),
+    xpReward: getBadgeXPReward(for: badgeId)
+)
+
             badge.isUnlocked = true
             badge.unlockedAt = Date()
 

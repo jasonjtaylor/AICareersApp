@@ -428,17 +428,26 @@ struct SettingsView: View {
 }
 
 #Preview {
-    let sampleProfile = UserProfile(displayName: "Alex", ageMode: .teen)
-    sampleProfile.totalXP = 150
-    sampleProfile.level = 2
-    sampleProfile.streakCount = 3
-
-    let dataManager = DataManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self)))
-
     ProfileView(
-        userProfile: sampleProfile,
-        xpManager: XPManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self))),
-        streakManager: StreakManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self))),
-        dataManager: dataManager
+        userProfile: {
+            let p = UserProfile(displayName: "Alex", ageMode: .teen)
+            p.totalXP = 150
+            p.level = 2
+            p.streakCount = 3
+            return p
+        }(),
+        xpManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return XPManager(modelContext: ctx)
+        }(),
+        streakManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return StreakManager(modelContext: ctx)
+        }(),
+        dataManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return DataManager(modelContext: ctx)
+        }()
     )
 }
+

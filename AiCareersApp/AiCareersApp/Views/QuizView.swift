@@ -41,7 +41,7 @@ struct QuizView: View {
                     )
                 } else {
                     QuizStartView {
-                        if let quiz = quizEngine.dataManager.getMainQuiz() {
+                        if let quiz = dataManager.getMainQuiz() {
                             quizEngine.startQuiz(quiz)
                         }
                     }
@@ -52,13 +52,15 @@ struct QuizView: View {
         }
         .onAppear {
             if quizEngine.currentQuiz == nil {
-                if let quiz = quizEngine.dataManager.getMainQuiz() {
+                if let quiz = dataManager.getMainQuiz() {
                     quizEngine.startQuiz(quiz)
                 }
             }
         }
     }
 }
+
+// MARK: - Start
 
 struct QuizStartView: View {
     let onStart: () -> Void
@@ -125,6 +127,8 @@ struct QuizFeatureRow: View {
         }
     }
 }
+
+// MARK: - Question
 
 struct QuizQuestionView: View {
     let question: QuizQuestion
@@ -220,6 +224,8 @@ struct QuizAnswerButton: View {
         }
     }
 }
+
+// MARK: - Results
 
 struct QuizResultsView: View {
     let result: QuizResult
