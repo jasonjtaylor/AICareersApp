@@ -347,3 +347,4 @@ struct QuizResultCard: View {
         dataManager: dataManager
     )
 }
+

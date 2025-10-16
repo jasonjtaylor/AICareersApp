@@ -187,15 +187,16 @@ struct AgeModeButton: View {
                 }
             }
             .padding()
-.background {
-    if isSelected {
-        LinearGradient(colors: [.dreamBlue, .dreamPurple],
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-    } else {
-        Color.backgroundSecondary
-    }
-}
+            .background {
+                if isSelected {
+                    LinearGradient(colors: [.dreamBlue, .dreamPurple],
+                                   startPoint: .topLeading,
+                                   endPoint: .bottomTrailing)
+                } else {
+                    Color.backgroundSecondary
+                }
+            }
+            .cornerRadius(Layout.cornerRadiusM)
             .dreamShadow()
         }
     }

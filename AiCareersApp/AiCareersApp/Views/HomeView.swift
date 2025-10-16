@@ -263,3 +263,4 @@ struct RecentCareerCard: View {
         }()
     )
 }
+

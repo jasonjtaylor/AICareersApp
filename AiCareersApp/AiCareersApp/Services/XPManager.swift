@@ -22,9 +22,7 @@ class XPManager: ObservableObject {
 
     func computeLevel(totalXP: Int) -> Int {
         for (index, xpRequired) in levelCurve.enumerated() {
-            if totalXP < xpRequired {
-                return index
-            }
+            if totalXP < xpRequired { return index }
         }
         return levelCurve.count
     }
@@ -32,25 +30,21 @@ class XPManager: ObservableObject {
     func xpForNextLevel(currentLevel: Int, totalXP: Int) -> Int {
         let nextLevel = currentLevel + 1
         guard nextLevel < levelCurve.count else { return 0 }
-
         let xpRequired = levelCurve[nextLevel]
         return max(0, xpRequired - totalXP)
     }
 
     func xpProgressForCurrentLevel(currentLevel: Int, totalXP: Int) -> Double {
         guard currentLevel > 0 && currentLevel < levelCurve.count else { return 0.0 }
-
         let currentLevelXP = levelCurve[currentLevel - 1]
         let nextLevelXP = levelCurve[currentLevel]
         let progressXP = totalXP - currentLevelXP
         let levelRange = nextLevelXP - currentLevelXP
-
         return Double(progressXP) / Double(levelRange)
     }
 
     func awardXP(to profile: UserProfile, reason: XPAwardReason, amount: Int? = nil) {
         let xpAmount = amount ?? reason.defaultAmount
-
         profile.totalXP += xpAmount
         profile.level = computeLevel(totalXP: profile.totalXP)
 
@@ -59,24 +53,20 @@ class XPManager: ObservableObject {
             checkForLevelUp(profile: profile)
         }
 
-        // Save to SwiftData
         try? modelContext.save()
     }
 
     private func checkForLevelUp(profile: UserProfile) {
         let newLevel = computeLevel(totalXP: profile.totalXP)
         if newLevel > profile.level {
-            // Level up! Award bonus XP
-            profile.totalXP += 50 // Bonus XP for leveling up
+            profile.totalXP += 50 // bonus for leveling up
             profile.level = newLevel
-
-            // TODO: Show level up animation/confetti
             print("🎉 Level up! Now level \(newLevel)")
         }
     }
 
     func unlockBadge(for profile: UserProfile, badgeId: String) {
-        // Check if badge already exists
+        // If badge already exists, just unlock & award XP
         if let existingBadge = profile.badges.first(where: { $0.id == badgeId }) {
             if !existingBadge.isUnlocked {
                 existingBadge.isUnlocked = true
@@ -84,15 +74,14 @@ class XPManager: ObservableObject {
                 awardXP(to: profile, reason: .badgeUnlock, amount: existingBadge.xpReward)
             }
         } else {
-            // Create new badge
-let badge = Badge(
-    id: badgeId,
-    name: getBadgeName(for: badgeId),
-    details: getBadgeDescription(for: badgeId),      // ✅
-    iconName: getBadgeIcon(for: badgeId),
-    xpReward: getBadgeXPReward(for: badgeId)
-)
-
+            // Create a new badge
+            let badge = Badge(
+                id: badgeId,
+                name: getBadgeName(for: badgeId),
+                details: getBadgeDescription(for: badgeId),
+                iconName: getBadgeIcon(for: badgeId),
+                xpReward: getBadgeXPReward(for: badgeId)
+            )
             badge.isUnlocked = true
             badge.unlockedAt = Date()
 
@@ -108,17 +97,12 @@ let badge = Badge(
         if profile.completedCareers.count >= 5 {
             unlockBadge(for: profile, badgeId: "explorer")
         }
-
-        // Scholar badge - complete 3 Learn steps
-        // This would need to be tracked in Progress model
-
+        // Scholar badge - complete 3 Learn steps (would be tracked in Progress)
         // Streaker badge - 5 day streak
         if profile.streakCount >= 5 {
             unlockBadge(for: profile, badgeId: "streaker")
         }
-
-        // Analyst badge - complete 3 quizzes
-        // This would need to be tracked separately
+        // Analyst badge - complete 3 quizzes (track elsewhere)
     }
 
     // MARK: - Badge Information
@@ -188,8 +172,9 @@ enum XPAwardReason {
         case .dailyStreak: return 25
         case .firstExplore: return 10
         case .careerPathComplete: return 200
-        case .badgeUnlock: return 0 // Handled separately
+        case .badgeUnlock: return 0 // handled separately
         case .levelUp: return 50
         }
     }
 }
+
