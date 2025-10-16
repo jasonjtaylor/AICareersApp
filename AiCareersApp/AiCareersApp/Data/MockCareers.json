@@ -1,0 +1,723 @@
+[
+  {
+    "id": "doctor",
+    "title": "Doctor",
+    "summary": "Help people stay healthy and treat illnesses",
+    "categories": ["Health", "Science"],
+    "salary": {
+      "entry": 60000,
+      "mid": 120000,
+      "top": 300000
+    },
+    "power": {
+      "creativity": 30,
+      "tech": 40,
+      "leadership": 80,
+      "adventure": 20
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "med-school",
+          "level": "Graduate",
+          "description": "Medical School",
+          "duration": "4 years",
+          "requirements": ["Bachelor's degree", "MCAT exam", "Pre-med courses"]
+        },
+        {
+          "id": "residency",
+          "level": "Graduate",
+          "description": "Residency Program",
+          "duration": "3-7 years",
+          "requirements": ["Medical degree", "USMLE exams"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Strong science background"]
+    },
+    "activities": [
+      "Shadow a doctor for a day",
+      "Volunteer at a hospital",
+      "Take advanced science courses",
+      "Join a medical club"
+    ],
+    "quizTags": ["helping", "science", "leadership", "analytical"],
+    "resources": [
+      "American Medical Association",
+      "Medical school preparation guides",
+      "Healthcare career resources"
+    ],
+    "programs": ["medical-school-1", "medical-school-2"],
+    "emoji": "🩺",
+    "questSteps": [
+      {
+        "id": "learn-doctor-1",
+        "type": "Learn",
+        "title": "What does a doctor do?",
+        "content": "Learn about the daily responsibilities and challenges of being a doctor.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-doctor-1",
+        "type": "Try",
+        "title": "Shadow a doctor",
+        "content": "Spend a day observing a doctor at work to see what the job is really like.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-doctor-1",
+        "type": "Path",
+        "title": "Plan your education",
+        "content": "Research medical schools and create a plan for your pre-med education.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-doctor-1",
+        "type": "Skills",
+        "title": "Develop medical skills",
+        "content": "Take advanced biology and chemistry courses to build your foundation.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "software-developer",
+    "title": "Software Developer",
+    "summary": "Create amazing apps and websites that people use every day",
+    "categories": ["Technology", "Science"],
+    "salary": {
+      "entry": 50000,
+      "mid": 80000,
+      "top": 150000
+    },
+    "power": {
+      "creativity": 70,
+      "tech": 95,
+      "leadership": 40,
+      "adventure": 30
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "cs-degree",
+          "level": "Degree",
+          "description": "Computer Science Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Math and science courses"]
+        },
+        {
+          "id": "bootcamp",
+          "level": "Certificate",
+          "description": "Coding Bootcamp",
+          "duration": "3-6 months",
+          "requirements": ["Basic computer skills", "Motivation to learn"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Basic computer skills"]
+    },
+    "activities": [
+      "Learn to code online",
+      "Build your first app",
+      "Join a coding club",
+      "Attend a hackathon"
+    ],
+    "quizTags": ["tech", "creative", "analytical", "problem-solving"],
+    "resources": [
+      "FreeCodeCamp",
+      "Codecademy",
+      "GitHub",
+      "Stack Overflow"
+    ],
+    "programs": ["cs-degree-1", "bootcamp-1"],
+    "emoji": "💻",
+    "questSteps": [
+      {
+        "id": "learn-dev-1",
+        "type": "Learn",
+        "title": "What is programming?",
+        "content": "Learn the basics of computer programming and different programming languages.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-dev-1",
+        "type": "Try",
+        "title": "Write your first program",
+        "content": "Create a simple program using Python or JavaScript.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-dev-1",
+        "type": "Path",
+        "title": "Choose your specialization",
+        "content": "Decide whether you want to focus on web development, mobile apps, or games.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-dev-1",
+        "type": "Skills",
+        "title": "Build a project",
+        "content": "Create a complete project to showcase your skills.",
+        "xpReward": 150
+      }
+    ]
+  },
+  {
+    "id": "teacher",
+    "title": "Teacher",
+    "summary": "Inspire and educate the next generation",
+    "categories": ["Public Service", "Education"],
+    "salary": {
+      "entry": 35000,
+      "mid": 55000,
+      "top": 80000
+    },
+    "power": {
+      "creativity": 80,
+      "tech": 30,
+      "leadership": 90,
+      "adventure": 40
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "education-degree",
+          "level": "Degree",
+          "description": "Education Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Subject area expertise"]
+        },
+        {
+          "id": "teacher-cert",
+          "level": "Certificate",
+          "description": "Teaching Certificate",
+          "duration": "1-2 years",
+          "requirements": ["Bachelor's degree", "Teaching program"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Passion for teaching"]
+    },
+    "activities": [
+      "Tutor younger students",
+      "Volunteer at a school",
+      "Join Future Teachers club",
+      "Observe a classroom"
+    ],
+    "quizTags": ["helping", "creative", "leadership", "communication"],
+    "resources": [
+      "National Education Association",
+      "Teaching certification guides",
+      "Educational technology resources"
+    ],
+    "programs": ["education-degree-1", "teacher-cert-1"],
+    "emoji": "👩‍🏫",
+    "questSteps": [
+      {
+        "id": "learn-teacher-1",
+        "type": "Learn",
+        "title": "What makes a great teacher?",
+        "content": "Learn about the qualities and skills that make teachers effective.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-teacher-1",
+        "type": "Try",
+        "title": "Teach someone something",
+        "content": "Practice teaching by explaining a concept to a friend or family member.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-teacher-1",
+        "type": "Path",
+        "title": "Choose your subject",
+        "content": "Decide what subject or grade level you'd like to teach.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-teacher-1",
+        "type": "Skills",
+        "title": "Develop teaching skills",
+        "content": "Practice public speaking and lesson planning.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "chef",
+    "title": "Chef",
+    "summary": "Create delicious meals and culinary experiences",
+    "categories": ["Arts", "Business"],
+    "salary": {
+      "entry": 25000,
+      "mid": 45000,
+      "top": 80000
+    },
+    "power": {
+      "creativity": 95,
+      "tech": 20,
+      "leadership": 70,
+      "adventure": 60
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "culinary-school",
+          "level": "Certificate",
+          "description": "Culinary Arts Certificate",
+          "duration": "1-2 years",
+          "requirements": ["High school diploma", "Passion for cooking"]
+        },
+        {
+          "id": "apprenticeship",
+          "level": "Apprenticeship",
+          "description": "Kitchen Apprenticeship",
+          "duration": "2-4 years",
+          "requirements": ["Basic cooking skills", "Work ethic"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Basic cooking skills"]
+    },
+    "activities": [
+      "Cook for family and friends",
+      "Take cooking classes",
+      "Work in a restaurant kitchen",
+      "Experiment with new recipes"
+    ],
+    "quizTags": ["creative", "hands-on", "artistic", "entrepreneurial"],
+    "resources": [
+      "Culinary Institute of America",
+      "Local cooking schools",
+      "Restaurant industry guides"
+    ],
+    "programs": ["culinary-school-1", "apprenticeship-1"],
+    "emoji": "👨‍🍳",
+    "questSteps": [
+      {
+        "id": "learn-chef-1",
+        "type": "Learn",
+        "title": "Culinary basics",
+        "content": "Learn about different cooking techniques and kitchen safety.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-chef-1",
+        "type": "Try",
+        "title": "Cook a complete meal",
+        "content": "Plan and prepare a three-course meal for your family.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-chef-1",
+        "type": "Path",
+        "title": "Choose your specialty",
+        "content": "Decide whether you want to focus on fine dining, baking, or casual cuisine.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-chef-1",
+        "type": "Skills",
+        "title": "Master knife skills",
+        "content": "Practice proper knife techniques and food preparation.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "pilot",
+    "title": "Pilot",
+    "summary": "Fly airplanes and travel the world",
+    "categories": ["Technology", "Adventure"],
+    "salary": {
+      "entry": 40000,
+      "mid": 80000,
+      "top": 150000
+    },
+    "power": {
+      "creativity": 30,
+      "tech": 80,
+      "leadership": 70,
+      "adventure": 95
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "flight-school",
+          "level": "Certificate",
+          "description": "Flight Training",
+          "duration": "1-2 years",
+          "requirements": ["High school diploma", "Medical certificate"]
+        },
+        {
+          "id": "aviation-degree",
+          "level": "Degree",
+          "description": "Aviation Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Math and science courses"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Good vision", "Physical fitness"]
+    },
+    "activities": [
+      "Take a discovery flight",
+      "Join a flying club",
+      "Study aviation theory",
+      "Visit an airport"
+    ],
+    "quizTags": ["tech", "adventure", "leadership", "analytical"],
+    "resources": [
+      "Federal Aviation Administration",
+      "Flight training schools",
+      "Aviation career guides"
+    ],
+    "programs": ["flight-school-1", "aviation-degree-1"],
+    "emoji": "✈️",
+    "questSteps": [
+      {
+        "id": "learn-pilot-1",
+        "type": "Learn",
+        "title": "Aviation basics",
+        "content": "Learn about how airplanes work and basic flight principles.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-pilot-1",
+        "type": "Try",
+        "title": "Take a discovery flight",
+        "content": "Experience flying in a small aircraft with an instructor.",
+        "xpReward": 150
+      },
+      {
+        "id": "path-pilot-1",
+        "type": "Path",
+        "title": "Choose your path",
+        "content": "Decide between commercial, military, or private aviation.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-pilot-1",
+        "type": "Skills",
+        "title": "Study aviation theory",
+        "content": "Learn about weather, navigation, and flight planning.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "electrician",
+    "title": "Electrician",
+    "summary": "Install and maintain electrical systems",
+    "categories": ["Trades", "Technology"],
+    "salary": {
+      "entry": 35000,
+      "mid": 60000,
+      "top": 90000
+    },
+    "power": {
+      "creativity": 40,
+      "tech": 70,
+      "leadership": 50,
+      "adventure": 30
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "apprenticeship",
+          "level": "Apprenticeship",
+          "description": "Electrical Apprenticeship",
+          "duration": "4-5 years",
+          "requirements": ["High school diploma", "Math skills"]
+        },
+        {
+          "id": "trade-school",
+          "level": "Certificate",
+          "description": "Electrical Technology Certificate",
+          "duration": "1-2 years",
+          "requirements": ["High school diploma", "Basic math"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Good math skills", "Physical fitness"]
+    },
+    "activities": [
+      "Learn about electrical safety",
+      "Practice with electrical tools",
+      "Shadow an electrician",
+      "Take shop classes"
+    ],
+    "quizTags": ["hands-on", "tech", "problem-solving", "practical"],
+    "resources": [
+      "International Brotherhood of Electrical Workers",
+      "Electrical trade schools",
+      "Apprenticeship programs"
+    ],
+    "programs": ["electrical-apprenticeship-1", "trade-school-1"],
+    "emoji": "⚡",
+    "questSteps": [
+      {
+        "id": "learn-electrician-1",
+        "type": "Learn",
+        "title": "Electrical safety",
+        "content": "Learn about electrical safety and basic electrical principles.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-electrician-1",
+        "type": "Try",
+        "title": "Build a simple circuit",
+        "content": "Create a basic electrical circuit using a battery and light bulb.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-electrician-1",
+        "type": "Path",
+        "title": "Choose your specialty",
+        "content": "Decide between residential, commercial, or industrial electrical work.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-electrician-1",
+        "type": "Skills",
+        "title": "Learn electrical tools",
+        "content": "Practice using electrical tools safely and effectively.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "graphic-designer",
+    "title": "Graphic Designer",
+    "summary": "Create visual designs and artwork",
+    "categories": ["Arts", "Technology"],
+    "salary": {
+      "entry": 35000,
+      "mid": 55000,
+      "top": 85000
+    },
+    "power": {
+      "creativity": 95,
+      "tech": 70,
+      "leadership": 40,
+      "adventure": 50
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "design-degree",
+          "level": "Degree",
+          "description": "Graphic Design Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Art portfolio"]
+        },
+        {
+          "id": "design-cert",
+          "level": "Certificate",
+          "description": "Design Certificate",
+          "duration": "1-2 years",
+          "requirements": ["High school diploma", "Basic computer skills"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Artistic ability", "Computer skills"]
+    },
+    "activities": [
+      "Create digital art",
+      "Design posters or flyers",
+      "Learn design software",
+      "Build a portfolio"
+    ],
+    "quizTags": ["creative", "artistic", "tech", "visual"],
+    "resources": [
+      "Adobe Creative Suite",
+      "Design schools and programs",
+      "Online design courses"
+    ],
+    "programs": ["design-degree-1", "design-cert-1"],
+    "emoji": "🎨",
+    "questSteps": [
+      {
+        "id": "learn-designer-1",
+        "type": "Learn",
+        "title": "Design principles",
+        "content": "Learn about color theory, typography, and layout design.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-designer-1",
+        "type": "Try",
+        "title": "Create a logo",
+        "content": "Design a logo for a local business or organization.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-designer-1",
+        "type": "Path",
+        "title": "Choose your focus",
+        "content": "Decide between print design, web design, or branding.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-designer-1",
+        "type": "Skills",
+        "title": "Master design software",
+        "content": "Learn to use Adobe Illustrator, Photoshop, or similar tools.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "nurse",
+    "title": "Nurse",
+    "summary": "Care for patients and help them recover",
+    "categories": ["Health", "Public Service"],
+    "salary": {
+      "entry": 45000,
+      "mid": 70000,
+      "top": 100000
+    },
+    "power": {
+      "creativity": 30,
+      "tech": 40,
+      "leadership": 60,
+      "adventure": 20
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "nursing-degree",
+          "level": "Degree",
+          "description": "Nursing Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Science courses"]
+        },
+        {
+          "id": "nursing-cert",
+          "level": "Certificate",
+          "description": "Practical Nursing Certificate",
+          "duration": "1-2 years",
+          "requirements": ["High school diploma", "CPR certification"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Science background", "Compassion"]
+    },
+    "activities": [
+      "Volunteer at a hospital",
+      "Take CPR classes",
+      "Shadow a nurse",
+      "Join a health club"
+    ],
+    "quizTags": ["helping", "science", "caring", "medical"],
+    "resources": [
+      "American Nurses Association",
+      "Nursing school programs",
+      "Healthcare career resources"
+    ],
+    "programs": ["nursing-degree-1", "nursing-cert-1"],
+    "emoji": "👩‍⚕️",
+    "questSteps": [
+      {
+        "id": "learn-nurse-1",
+        "type": "Learn",
+        "title": "Nursing basics",
+        "content": "Learn about patient care and medical procedures.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-nurse-1",
+        "type": "Try",
+        "title": "Volunteer at a hospital",
+        "content": "Spend time helping patients and observing nurses at work.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-nurse-1",
+        "type": "Path",
+        "title": "Choose your specialty",
+        "content": "Decide between different nursing specialties like pediatrics or emergency care.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-nurse-1",
+        "type": "Skills",
+        "title": "Learn medical skills",
+        "content": "Take courses in anatomy, physiology, and medical terminology.",
+        "xpReward": 50
+      }
+    ]
+  },
+  {
+    "id": "data-analyst",
+    "title": "Data Analyst",
+    "summary": "Find patterns and insights in data",
+    "categories": ["Technology", "Science"],
+    "salary": {
+      "entry": 50000,
+      "mid": 75000,
+      "top": 120000
+    },
+    "power": {
+      "creativity": 50,
+      "tech": 90,
+      "leadership": 40,
+      "adventure": 30
+    },
+    "education": {
+      "paths": [
+        {
+          "id": "data-science-degree",
+          "level": "Degree",
+          "description": "Data Science Degree",
+          "duration": "4 years",
+          "requirements": ["High school diploma", "Math and statistics"]
+        },
+        {
+          "id": "analytics-cert",
+          "level": "Certificate",
+          "description": "Data Analytics Certificate",
+          "duration": "6-12 months",
+          "requirements": ["Basic computer skills", "Math background"]
+        }
+      ],
+      "prerequisites": ["High school diploma", "Math skills", "Computer skills"]
+    },
+    "activities": [
+      "Learn Excel and SQL",
+      "Analyze data from your school",
+      "Take statistics courses",
+      "Practice with datasets"
+    ],
+    "quizTags": ["analytical", "tech", "math", "problem-solving"],
+    "resources": [
+      "Kaggle",
+      "Data analysis courses",
+      "Statistics resources"
+    ],
+    "programs": ["data-science-degree-1", "analytics-cert-1"],
+    "emoji": "📊",
+    "questSteps": [
+      {
+        "id": "learn-analyst-1",
+        "type": "Learn",
+        "title": "Data analysis basics",
+        "content": "Learn about statistics and how to interpret data.",
+        "xpReward": 50
+      },
+      {
+        "id": "try-analyst-1",
+        "type": "Try",
+        "title": "Analyze school data",
+        "content": "Create charts and graphs using data from your school or community.",
+        "xpReward": 100
+      },
+      {
+        "id": "path-analyst-1",
+        "type": "Path",
+        "title": "Choose your tools",
+        "content": "Learn Excel, Python, or R for data analysis.",
+        "xpReward": 75
+      },
+      {
+        "id": "skills-analyst-1",
+        "type": "Skills",
+        "title": "Master visualization",
+        "content": "Learn to create clear and informative charts and graphs.",
+        "xpReward": 50
+      }
+    ]
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "id": "main-career-quiz",
+    "title": "Career Discovery Quiz",
+    "description": "Discover which careers match your interests and personality",
+    "tags": ["personality", "interests", "career-matching"],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "What do you enjoy doing most in your free time?",
+        "tags": ["interests", "personality"],
+        "answers": [
+          {
+            "id": "a1-1",
+            "text": "Playing video games or using technology",
+            "tags": ["tech", "analytical"],
+            "weight": 3
+          },
+          {
+            "id": "a1-2",
+            "text": "Drawing, painting, or creating art",
+            "tags": ["creative", "artistic"],
+            "weight": 3
+          },
+          {
+            "id": "a1-3",
+            "text": "Helping friends with their problems",
+            "tags": ["helping", "leadership"],
+            "weight": 3
+          },
+          {
+            "id": "a1-4",
+            "text": "Playing sports or being outdoors",
+            "tags": ["adventure", "hands-on"],
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "In school, which subject do you find most interesting?",
+        "tags": ["academic", "interests"],
+        "answers": [
+          {
+            "id": "a2-1",
+            "text": "Math and science",
+            "tags": ["analytical", "tech", "science"],
+            "weight": 4
+          },
+          {
+            "id": "a2-2",
+            "text": "Art and creative writing",
+            "tags": ["creative", "artistic"],
+            "weight": 4
+          },
+          {
+            "id": "a2-3",
+            "text": "History and social studies",
+            "tags": ["helping", "leadership", "communication"],
+            "weight": 4
+          },
+          {
+            "id": "a2-4",
+            "text": "Physical education and health",
+            "tags": ["adventure", "hands-on", "helping"],
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "prompt": "When working on a group project, you prefer to:",
+        "tags": ["personality", "leadership"],
+        "answers": [
+          {
+            "id": "a3-1",
+            "text": "Take charge and organize everyone",
+            "tags": ["leadership", "communication"],
+            "weight": 4
+          },
+          {
+            "id": "a3-2",
+            "text": "Focus on the creative aspects",
+            "tags": ["creative", "artistic"],
+            "weight": 4
+          },
+          {
+            "id": "a3-3",
+            "text": "Work on the technical details",
+            "tags": ["tech", "analytical"],
+            "weight": 4
+          },
+          {
+            "id": "a3-4",
+            "text": "Help others and make sure everyone is included",
+            "tags": ["helping", "communication"],
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "id": "q4",
+        "prompt": "What type of work environment appeals to you most?",
+        "tags": ["workplace", "personality"],
+        "answers": [
+          {
+            "id": "a4-1",
+            "text": "A quiet office with computers",
+            "tags": ["tech", "analytical"],
+            "weight": 3
+          },
+          {
+            "id": "a4-2",
+            "text": "A creative studio or workshop",
+            "tags": ["creative", "artistic"],
+            "weight": 3
+          },
+          {
+            "id": "a4-3",
+            "text": "A busy place helping people",
+            "tags": ["helping", "leadership"],
+            "weight": 3
+          },
+          {
+            "id": "a4-4",
+            "text": "Outdoors or different locations",
+            "tags": ["adventure", "hands-on"],
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "q5",
+        "prompt": "What motivates you most?",
+        "tags": ["motivation", "personality"],
+        "answers": [
+          {
+            "id": "a5-1",
+            "text": "Solving complex problems",
+            "tags": ["analytical", "tech"],
+            "weight": 4
+          },
+          {
+            "id": "a5-2",
+            "text": "Creating something beautiful or unique",
+            "tags": ["creative", "artistic"],
+            "weight": 4
+          },
+          {
+            "id": "a5-3",
+            "text": "Making a difference in people's lives",
+            "tags": ["helping", "leadership"],
+            "weight": 4
+          },
+          {
+            "id": "a5-4",
+            "text": "Having new experiences and adventures",
+            "tags": ["adventure", "hands-on"],
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "id": "q6",
+        "prompt": "When you face a challenge, you:",
+        "tags": ["problem-solving", "personality"],
+        "answers": [
+          {
+            "id": "a6-1",
+            "text": "Research and analyze the problem step by step",
+            "tags": ["analytical", "tech"],
+            "weight": 3
+          },
+          {
+            "id": "a6-2",
+            "text": "Try creative and unconventional solutions",
+            "tags": ["creative", "artistic"],
+            "weight": 3
+          },
+          {
+            "id": "a6-3",
+            "text": "Ask others for help and work together",
+            "tags": ["helping", "leadership", "communication"],
+            "weight": 3
+          },
+          {
+            "id": "a6-4",
+            "text": "Jump in and learn by doing",
+            "tags": ["adventure", "hands-on"],
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "q7",
+        "prompt": "What kind of impact do you want to have?",
+        "tags": ["values", "motivation"],
+        "answers": [
+          {
+            "id": "a7-1",
+            "text": "Advance technology and innovation",
+            "tags": ["tech", "analytical"],
+            "weight": 4
+          },
+          {
+            "id": "a7-2",
+            "text": "Inspire others through art and creativity",
+            "tags": ["creative", "artistic"],
+            "weight": 4
+          },
+          {
+            "id": "a7-3",
+            "text": "Help and serve others in need",
+            "tags": ["helping", "leadership"],
+            "weight": 4
+          },
+          {
+            "id": "a7-4",
+            "text": "Explore and discover new things",
+            "tags": ["adventure", "hands-on"],
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "id": "q8",
+        "prompt": "How do you prefer to learn new things?",
+        "tags": ["learning", "personality"],
+        "answers": [
+          {
+            "id": "a8-1",
+            "text": "Reading books and online resources",
+            "tags": ["analytical", "tech"],
+            "weight": 3
+          },
+          {
+            "id": "a8-2",
+            "text": "Experimenting and trying things out",
+            "tags": ["creative", "artistic"],
+            "weight": 3
+          },
+          {
+            "id": "a8-3",
+            "text": "Working with others and discussing ideas",
+            "tags": ["helping", "leadership", "communication"],
+            "weight": 3
+          },
+          {
+            "id": "a8-4",
+            "text": "Hands-on practice and experience",
+            "tags": ["adventure", "hands-on"],
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "q9",
+        "prompt": "What type of projects do you enjoy most?",
+        "tags": ["interests", "work-style"],
+        "answers": [
+          {
+            "id": "a9-1",
+            "text": "Building apps or websites",
+            "tags": ["tech", "analytical"],
+            "weight": 4
+          },
+          {
+            "id": "a9-2",
+            "text": "Designing posters, logos, or artwork",
+            "tags": ["creative", "artistic"],
+            "weight": 4
+          },
+          {
+            "id": "a9-3",
+            "text": "Organizing events or helping others",
+            "tags": ["helping", "leadership"],
+            "weight": 4
+          },
+          {
+            "id": "a9-4",
+            "text": "Building or fixing things with your hands",
+            "tags": ["adventure", "hands-on"],
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "prompt": "What would you like to be known for?",
+        "tags": ["values", "aspirations"],
+        "answers": [
+          {
+            "id": "a10-1",
+            "text": "Being innovative and solving problems",
+            "tags": ["tech", "analytical"],
+            "weight": 5
+          },
+          {
+            "id": "a10-2",
+            "text": "Creating beautiful and inspiring work",
+            "tags": ["creative", "artistic"],
+            "weight": 5
+          },
+          {
+            "id": "a10-3",
+            "text": "Making a positive difference in people's lives",
+            "tags": ["helping", "leadership"],
+            "weight": 5
+          },
+          {
+            "id": "a10-4",
+            "text": "Being adventurous and trying new things",
+            "tags": ["adventure", "hands-on"],
+            "weight": 5
+          }
+        ]
+      }
+    ]
+  }
+]

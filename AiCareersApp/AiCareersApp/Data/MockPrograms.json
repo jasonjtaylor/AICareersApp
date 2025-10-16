@@ -1,0 +1,273 @@
+[
+  {
+    "id": "medical-school-1",
+    "name": "Doctor of Medicine (MD)",
+    "institution": "University of Health Sciences",
+    "region": "California",
+    "level": "Graduate",
+    "duration": "4 years",
+    "category": "Health",
+    "url": "https://example.com/medical-school",
+    "description": "Comprehensive medical education preparing students for careers in medicine",
+    "requirements": [
+      "Bachelor's degree",
+      "MCAT exam score",
+      "Pre-med prerequisites",
+      "Letters of recommendation",
+      "Interview"
+    ],
+    "careerIds": ["doctor", "nurse"]
+  },
+  {
+    "id": "cs-degree-1",
+    "name": "Bachelor of Science in Computer Science",
+    "institution": "Tech University",
+    "region": "Washington",
+    "level": "Degree",
+    "duration": "4 years",
+    "category": "Technology",
+    "url": "https://example.com/cs-degree",
+    "description": "Comprehensive computer science program covering programming, algorithms, and software engineering",
+    "requirements": [
+      "High school diploma",
+      "Math courses (Calculus, Statistics)",
+      "SAT/ACT scores",
+      "Application essay"
+    ],
+    "careerIds": ["software-developer", "data-analyst"]
+  },
+  {
+    "id": "education-degree-1",
+    "name": "Bachelor of Education",
+    "institution": "Teachers College",
+    "region": "New York",
+    "level": "Degree",
+    "duration": "4 years",
+    "category": "Education",
+    "url": "https://example.com/education-degree",
+    "description": "Teacher preparation program with classroom experience and pedagogy training",
+    "requirements": [
+      "High school diploma",
+      "Subject area expertise",
+      "Background check",
+      "Teaching practicum"
+    ],
+    "careerIds": ["teacher"]
+  },
+  {
+    "id": "culinary-school-1",
+    "name": "Culinary Arts Certificate",
+    "institution": "Culinary Institute of Excellence",
+    "region": "Illinois",
+    "level": "Certificate",
+    "duration": "18 months",
+    "category": "Arts",
+    "url": "https://example.com/culinary-school",
+    "description": "Hands-on culinary training with professional kitchen experience",
+    "requirements": [
+      "High school diploma",
+      "Passion for cooking",
+      "Application and interview",
+      "Basic knife skills test"
+    ],
+    "careerIds": ["chef"]
+  },
+  {
+    "id": "flight-school-1",
+    "name": "Commercial Pilot License",
+    "institution": "Sky High Aviation Academy",
+    "region": "Texas",
+    "level": "Certificate",
+    "duration": "12-18 months",
+    "category": "Aviation",
+    "url": "https://example.com/flight-school",
+    "description": "Professional pilot training for commercial aviation careers",
+    "requirements": [
+      "High school diploma",
+      "Medical certificate",
+      "English proficiency",
+      "Minimum age 18"
+    ],
+    "careerIds": ["pilot"]
+  },
+  {
+    "id": "electrical-apprenticeship-1",
+    "name": "Electrical Apprenticeship Program",
+    "institution": "United Electrical Workers Union",
+    "region": "Ohio",
+    "level": "Apprenticeship",
+    "duration": "4 years",
+    "category": "Trades",
+    "url": "https://example.com/electrical-apprenticeship",
+    "description": "Combined classroom and on-the-job training for electrical work",
+    "requirements": [
+      "High school diploma",
+      "Math skills",
+      "Physical fitness",
+      "Drug test"
+    ],
+    "careerIds": ["electrician"]
+  },
+  {
+    "id": "design-degree-1",
+    "name": "Bachelor of Fine Arts in Graphic Design",
+    "institution": "Art Institute of Design",
+    "region": "California",
+    "level": "Degree",
+    "duration": "4 years",
+    "category": "Arts",
+    "url": "https://example.com/design-degree",
+    "description": "Comprehensive graphic design program with portfolio development",
+    "requirements": [
+      "High school diploma",
+      "Art portfolio",
+      "SAT/ACT scores",
+      "Creative essay"
+    ],
+    "careerIds": ["graphic-designer"]
+  },
+  {
+    "id": "nursing-degree-1",
+    "name": "Bachelor of Science in Nursing",
+    "institution": "College of Health Sciences",
+    "region": "Florida",
+    "level": "Degree",
+    "duration": "4 years",
+    "category": "Health",
+    "url": "https://example.com/nursing-degree",
+    "description": "Comprehensive nursing program with clinical experience",
+    "requirements": [
+      "High school diploma",
+      "Science prerequisites",
+      "Background check",
+      "CPR certification"
+    ],
+    "careerIds": ["nurse", "doctor"]
+  },
+  {
+    "id": "data-science-degree-1",
+    "name": "Master of Science in Data Science",
+    "institution": "University of Analytics",
+    "region": "Massachusetts",
+    "level": "Graduate",
+    "duration": "2 years",
+    "category": "Technology",
+    "url": "https://example.com/data-science-degree",
+    "description": "Advanced data science program with machine learning and statistics",
+    "requirements": [
+      "Bachelor's degree",
+      "Math and statistics background",
+      "Programming experience",
+      "GRE scores"
+    ],
+    "careerIds": ["data-analyst", "software-developer"]
+  },
+  {
+    "id": "bootcamp-1",
+    "name": "Full-Stack Web Development Bootcamp",
+    "institution": "Code Academy Online",
+    "region": "Online",
+    "level": "Certificate",
+    "duration": "6 months",
+    "category": "Technology",
+    "url": "https://example.com/bootcamp",
+    "description": "Intensive programming bootcamp covering front-end and back-end development",
+    "requirements": [
+      "Basic computer skills",
+      "Motivation to learn",
+      "Time commitment",
+      "Laptop computer"
+    ],
+    "careerIds": ["software-developer", "data-analyst"]
+  },
+  {
+    "id": "teacher-cert-1",
+    "name": "Teaching Certificate Program",
+    "institution": "Teachers College Extension",
+    "region": "Online",
+    "level": "Certificate",
+    "duration": "1 year",
+    "category": "Education",
+    "url": "https://example.com/teacher-cert",
+    "description": "Alternative teacher certification for career changers",
+    "requirements": [
+      "Bachelor's degree",
+      "Subject area expertise",
+      "Background check",
+      "Teaching practicum"
+    ],
+    "careerIds": ["teacher"]
+  },
+  {
+    "id": "trade-school-1",
+    "name": "Electrical Technology Certificate",
+    "institution": "Technical College",
+    "region": "Michigan",
+    "level": "Certificate",
+    "duration": "1 year",
+    "category": "Trades",
+    "url": "https://example.com/trade-school",
+    "description": "Electrical technology program with hands-on training",
+    "requirements": [
+      "High school diploma",
+      "Basic math skills",
+      "Physical fitness",
+      "Safety training"
+    ],
+    "careerIds": ["electrician"]
+  },
+  {
+    "id": "design-cert-1",
+    "name": "Digital Design Certificate",
+    "institution": "Creative Arts Institute",
+    "region": "Online",
+    "level": "Certificate",
+    "duration": "8 months",
+    "category": "Arts",
+    "url": "https://example.com/design-cert",
+    "description": "Digital design program covering Adobe Creative Suite and web design",
+    "requirements": [
+      "High school diploma",
+      "Basic computer skills",
+      "Creative portfolio",
+      "Design software access"
+    ],
+    "careerIds": ["graphic-designer"]
+  },
+  {
+    "id": "nursing-cert-1",
+    "name": "Practical Nursing Certificate",
+    "institution": "Community Health College",
+    "region": "Georgia",
+    "level": "Certificate",
+    "duration": "18 months",
+    "category": "Health",
+    "url": "https://example.com/nursing-cert",
+    "description": "Practical nursing program with clinical experience",
+    "requirements": [
+      "High school diploma",
+      "Science prerequisites",
+      "Background check",
+      "CPR certification"
+    ],
+    "careerIds": ["nurse"]
+  },
+  {
+    "id": "analytics-cert-1",
+    "name": "Data Analytics Certificate",
+    "institution": "Online Learning Institute",
+    "region": "Online",
+    "level": "Certificate",
+    "duration": "6 months",
+    "category": "Technology",
+    "url": "https://example.com/analytics-cert",
+    "description": "Data analytics program covering Excel, SQL, and visualization tools",
+    "requirements": [
+      "Basic computer skills",
+      "Math background",
+      "Excel knowledge",
+      "Time commitment"
+    ],
+    "careerIds": ["data-analyst"]
+  }
+]
