@@ -1,0 +1,68 @@
+name: iOS build (xcodebuild)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Find project/workspace and scheme
+        id: find
+        shell: bash
+        run: |
+          set -e
+          PROJ=$(ls -1 *.xcodeproj 2>/dev/null | head -n1 || true)
+          WORK=$(ls -1 *.xcworkspace 2>/dev/null | head -n1 || true)
+
+          if [[ -n "$WORK" ]]; then
+            TARGET_TYPE=workspace
+            TARGET_PATH="$WORK"
+          elif [[ -n "$PROJ" ]]; then
+            TARGET_TYPE=project
+            TARGET_PATH="$PROJ"
+          else
+            echo "No .xcodeproj or .xcworkspace found at repo root."
+            exit 1
+          fi
+
+          # Default scheme = file name without extension
+          SCHEME=$(basename "$TARGET_PATH" | sed 's/\.\(xcworkspace\|xcodeproj\)$//')
+
+          echo "target_type=$TARGET_TYPE" >> "$GITHUB_OUTPUT"
+          echo "target_path=$TARGET_PATH" >> "$GITHUB_OUTPUT"
+          echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve SwiftPM dependencies
+        run: |
+          if [[ "${{ steps.find.outputs.target_type }}" == "workspace" ]]; then
+            xcodebuild -resolvePackageDependencies -workspace "${{ steps.find.outputs.target_path }}"
+          else
+            xcodebuild -resolvePackageDependencies -project "${{ steps.find.outputs.target_path }}"
+          fi
+
+      - name: Build (Debug, iPhone Simulator)
+        run: |
+          if [[ "${{ steps.find.outputs.target_type }}" == "workspace" ]]; then
+            xcodebuild \
+              -workspace "${{ steps.find.outputs.target_path }}" \
+              -scheme "${{ steps.find.outputs.scheme }}" \
+              -sdk iphonesimulator \
+              -configuration Debug \
+              -destination 'platform=iOS Simulator,name=iPhone 15' \
+              build
+          else
+            xcodebuild \
+              -project "${{ steps.find.outputs.target_path }}" \
+              -scheme "${{ steps.find.outputs.scheme }}" \
+              -sdk iphonesimulator \
+              -configuration Debug \
+              -destination 'platform=iOS Simulator,name=iPhone 15' \
+              build
+          fi
