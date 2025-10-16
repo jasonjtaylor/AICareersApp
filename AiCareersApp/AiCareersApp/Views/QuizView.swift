@@ -41,9 +41,10 @@ struct QuizView: View {
                     )
                 } else {
                     QuizStartView {
-                        if let quiz = quizEngine.dataManager.getMainQuiz() {
-                            quizEngine.startQuiz(quiz)
-                        }
+                       if let quiz = dataManager.getMainQuiz() {
+    quizEngine.startQuiz(quiz)
+}
+
                     }
                 }
             }
@@ -52,9 +53,10 @@ struct QuizView: View {
         }
         .onAppear {
             if quizEngine.currentQuiz == nil {
-                if let quiz = quizEngine.dataManager.getMainQuiz() {
-                    quizEngine.startQuiz(quiz)
-                }
+               if let quiz = dataManager.getMainQuiz() {
+    quizEngine.startQuiz(quiz)
+}
+
             }
         }
     }

@@ -241,15 +241,26 @@ struct RecentCareerCard: View {
 }
 
 #Preview {
-    let sampleProfile = UserProfile(displayName: "Alex", ageMode: .teen)
-    sampleProfile.totalXP = 150
-    sampleProfile.level = 2
-    sampleProfile.streakCount = 3
-
     HomeView(
-        userProfile: sampleProfile,
-        dataManager: DataManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self))),
-        xpManager: XPManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self))),
-        streakManager: StreakManager(modelContext: ModelContext(try! ModelContainer(for: UserProfile.self)))
+        userProfile: {
+            let p = UserProfile(displayName: "Alex", ageMode: .teen)
+            p.totalXP = 150
+            p.level = 2
+            p.streakCount = 3
+            return p
+        }(),
+        dataManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return DataManager(modelContext: ctx)
+        }(),
+        xpManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return XPManager(modelContext: ctx)
+        }(),
+        streakManager: {
+            let ctx = ModelContext(try! ModelContainer(for: UserProfile.self))
+            return StreakManager(modelContext: ctx)
+        }()
     )
 }
+
