@@ -29,9 +29,22 @@
 		96755DA02EA0637300789BF6 /* AiCareersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiCareersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		96DA803A2EA0AB4D00C0236A /* Exceptions for "AiCareersApp" folder in "AiCareersApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 96755D882EA0637100789BF6 /* AiCareersApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		96755D8B2EA0637100789BF6 /* AiCareersApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				96DA803A2EA0AB4D00C0236A /* Exceptions for "AiCareersApp" folder in "AiCareersApp" target */,
+			);
 			path = AiCareersApp;
 			sourceTree = "<group>";
 		};
